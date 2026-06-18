@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Event Management System - Plan, Organize, and Experience Events Smarter</title>
+    <meta name="description" content="Welcome to Smart Event Management System, a platform designed to help users discover, explore, and participate in various events.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Bar -->
+    <header class="navbar-container">
+        <div class="navbar-wrapper">
+            <a href="#" class="brand-logo" id="nav-brand">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span>SmartEvent</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-item active" id="link-home">Home</a>
+                <a href="#about" class="nav-item" id="link-about">About</a>
+                <a href="#events" class="nav-item" id="link-events">Events</a>
+                <a href="#register" class="nav-item" id="link-register">Register</a>
+                <a href="#planner" class="nav-item" id="link-planner">Event Planner</a>
+                <a href="#contact" class="nav-item" id="link-contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Smart Event Management System</h1>
+            <p class="hero-tagline">Plan, Organize, and Experience Events Smarter</p>
+            <p class="hero-description">Welcome to Smart Event Management System, a platform designed to help users discover, explore, and participate in various events. From technical workshops and seminars to cultural festivals and sports competitions, we bring exciting opportunities together in one place.</p>
+            <div class="hero-actions">
+                <a href="#events" class="btn btn-primary" id="hero-explore">Explore Events</a>
+                <a href="#register" class="btn btn-secondary" id="hero-register-btn">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About Us</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Smart Event Management System is a user-friendly platform created to simplify event discovery and participation. Our mission is to connect people with valuable learning, networking, and entertainment opportunities through well-organized events.</p>
+                    <p>Whether you are a student, professional, or event enthusiast, our platform helps you stay updated with upcoming events and important information.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="glow-box">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="url(#about-gradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="about-svg">
+                            <defs>
+                                <linearGradient id="about-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4f46e5" />
+                                    <stop offset="100%" stop-color="#06b6d4" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        <h3>Connecting People</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us Section -->
+    <section class="features-section" id="why-choose-us">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Our Value</span>
+                <h2 class="section-title">Why Choose Smart Event Management System?</h2>
+            </div>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <h3 class="feature-card-title">Easy Event Discovery</h3>
+                    <p class="feature-card-desc">Find multiple events in one place.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <h3 class="feature-card-title">User-Friendly Experience</h3>
+                    <p class="feature-card-desc">Simple and easy-to-use interface.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <h3 class="feature-card-title">Regular Updates</h3>
+                    <p class="feature-card-desc">Stay informed about upcoming events.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h3 class="feature-card-title">Accessible Anywhere</h3>
+                    <p class="feature-card-desc">Works on desktop, tablet, and mobile devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Responsive Event Cards (Upcoming Events) -->
+    <section class="events-section" id="events">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Handpicked For You</span>
+                <h2 class="section-title">Upcoming Events</h2>
+            </div>
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card">
+                    <div class="event-badge">Tech</div>
+                    <div class="event-card-content">
+                        <h3 class="event-card-title">Web Development Workshop</h3>
+                        <div class="event-meta-info">
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                15 July 2026
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Madurai Tech Hub
+                            </span>
+                        </div>
+                        <p class="event-card-desc">Learn HTML, CSS, JavaScript, and responsive web design through practical projects.</p>
+                        <a href="#register" class="event-action-link" data-event-select="web-dev">Register for Event</a>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-badge">Tech</div>
+                    <div class="event-card-content">
+                        <h3 class="event-card-title">AI & Machine Learning Seminar</h3>
+                        <div class="event-meta-info">
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                22 July 2026
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Innovation Hall
+                            </span>
+                        </div>
+                        <p class="event-card-desc">Understand the future of AI and Machine Learning from industry professionals.</p>
+                        <a href="#register" class="event-action-link" data-event-select="ai-ml">Register for Event</a>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="event-card">
+                    <div class="event-badge">Cultural</div>
+                    <div class="event-card-content">
+                        <h3 class="event-card-title">Annual Cultural Fest</h3>
+                        <div class="event-meta-info">
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                5 August 2026
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                College Auditorium
+                            </span>
+                        </div>
+                        <p class="event-card-desc">Participate in music, dance, drama, and talent competitions.</p>
+                        <a href="#register" class="event-action-link" data-event-select="cultural-fest">Register for Event</a>
+                    </div>
+                </div>
+                <!-- Event 4 -->
+                <div class="event-card">
+                    <div class="event-badge">Sports</div>
+                    <div class="event-card-content">
+                        <h3 class="event-card-title">National Sports Meet</h3>
+                        <div class="event-meta-info">
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                20 August 2026
+                            </span>
+                            <span class="meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Sports Complex
+                            </span>
+                        </div>
+                        <p class="event-card-desc">Compete in various sports events and showcase your athletic abilities.</p>
+                        <a href="#register" class="event-action-link" data-event-select="sports-meet">Register for Event</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Event Categories Section -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Diversity</span>
+                <h2 class="section-title">Event Categories</h2>
+            </div>
+            <div class="categories-grid">
+                <!-- Category 1 -->
+                <div class="category-card">
+                    <div class="category-icon-wrapper text-accent-indigo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3 class="category-title">Technical Events</h3>
+                    <p class="category-desc">Workshops, coding competitions, and hackathons.</p>
+                </div>
+                <!-- Category 2 -->
+                <div class="category-card">
+                    <div class="category-icon-wrapper text-accent-pink">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+                    </div>
+                    <h3 class="category-title">Cultural Events</h3>
+                    <p class="category-desc">Music, dance, drama, and talent shows.</p>
+                </div>
+                <!-- Category 3 -->
+                <div class="category-card">
+                    <div class="category-icon-wrapper text-accent-cyan">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <h3 class="category-title">Sports Events</h3>
+                    <p class="category-desc">Cricket, football, volleyball, and athletics.</p>
+                </div>
+                <!-- Category 4 -->
+                <div class="category-card">
+                    <div class="category-icon-wrapper text-accent-amber">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h3 class="category-title">Career Development Events</h3>
+                    <p class="category-desc">Placement drives and career guidance programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 2: Event Registration Page/Section -->
+    <section class="register-section" id="register">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Reservations</span>
+                <h2 class="section-title">Register for Your Event</h2>
+                <p class="section-subtitle">Fill out the registration form to reserve your spot in upcoming events. Once registered, you will receive event updates and important announcements.</p>
+            </div>
+            
+            <div class="form-wrapper">
+                <form id="event-register-form" novalidate>
+                    <div class="form-group-section">
+                        <h3 class="form-section-title">Personal Information</h3>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="reg-fullname">Full Name *</label>
+                                <input type="text" id="reg-fullname" placeholder="Enter your full name" autocomplete="name">
+                                <span class="error-msg" id="err-fullname">Please enter your full name.</span>
+                            </div>
+                            <div class="form-field">
+                                <label for="reg-email">Email Address *</label>
+                                <input type="email" id="reg-email" placeholder="Enter your email address" autocomplete="email">
+                                <span class="error-msg" id="err-email">Please enter a valid email address.</span>
+                            </div>
+                            <div class="form-field">
+                                <label for="reg-phone">Phone Number *</label>
+                                <input type="tel" id="reg-phone" placeholder="Enter your 10-digit number" autocomplete="tel">
+                                <span class="error-msg" id="err-phone">Please enter a valid phone number.</span>
+                            </div>
+                            <div class="form-field">
+                                <label for="reg-org">College / Organization</label>
+                                <input type="text" id="reg-org" placeholder="Enter college or organization">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group-section">
+                        <h3 class="form-section-title">Event Details</h3>
+                        <div class="form-grid single-col">
+                            <div class="form-field">
+                                <label for="reg-event">Select Event *</label>
+                                <select id="reg-event">
+                                    <option value="" disabled selected>-- Choose an Event --</option>
+                                    <option value="web-dev">Web Development Workshop</option>
+                                    <option value="ai-ml">AI & Machine Learning Seminar</option>
+                                    <option value="cultural-fest">Annual Cultural Fest</option>
+                                    <option value="sports-meet">National Sports Meet</option>
+                                </select>
+                                <span class="error-msg" id="err-event">Please select an event.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group-section">
+                        <h3 class="form-section-title">Additional Information</h3>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="reg-gender">Gender</label>
+                                <select id="reg-gender">
+                                    <option value="" disabled selected>-- Select Gender --</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not">Prefer not to say</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="reg-city">City</label>
+                                <input type="text" id="reg-city" placeholder="Enter city name">
+                            </div>
+                            <div class="form-field full-width">
+                                <label for="reg-reason">Why do you want to attend this event?</label>
+                                <textarea id="reg-reason" rows="4" placeholder="Briefly explain your interest in this event..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions-wrapper">
+                        <button type="submit" class="btn btn-primary" id="register-submit-btn">Register Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 2: Event Preparation Planner Section -->
+    <section class="planner-section" id="planner">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Management Tool</span>
+                <h2 class="section-title">Event Preparation Planner</h2>
+                <p class="section-subtitle">Organize your event preparation activities efficiently using the planner below.</p>
+            </div>
+
+            <div class="planner-wrapper">
+                <div class="planner-input-group">
+                    <input type="text" id="planner-task-input" placeholder="Enter a new preparation task...">
+                    <button class="btn btn-primary" id="planner-add-btn">Add Task</button>
+                </div>
+                
+                <div class="planner-list-container">
+                    <div class="planner-header-bar">
+                        <span id="planner-count">Total Tasks: 0</span>
+                        <button class="clear-completed-btn" id="planner-clear-completed" style="display:none;">Clear Completed</button>
+                    </div>
+                    <ul class="planner-list" id="planner-list">
+                        <!-- Tasks dynamically populated in JS -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Statistics Section -->
+    <section class="stats-section" id="statistics">
+        <div class="stats-bg-glow"></div>
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Events Organized</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Participants</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Partner Organizations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Reviews</span>
+                <h2 class="section-title">Testimonials</h2>
+            </div>
+            <div class="testimonials-grid">
+                <!-- Review 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon-wrapper">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"An excellent platform for discovering workshops and technical events."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Priya S.</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon-wrapper">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"The event information was clear and easy to access."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Arjun K.</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon-wrapper">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"I found several useful career seminars through this platform."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RM</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Rahul M.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Contact Us Section (Updated with Office Hours) -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Need assistance with registration or event details?</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-grid">
+                    <!-- Column 1: Info -->
+                    <div class="contact-info-col">
+                        <h3 class="contact-block-title">Contact Information</h3>
+                        <div class="contact-details-list">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:eventsphere.support@gmail.com" class="contact-link">eventsphere.support@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+91XXXXXXXXXX" class="contact-link">+91 XXXXX XXXXX</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h4>Location</h4>
+                                    <p>Madurai, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Hours -->
+                    <div class="contact-hours-col">
+                        <h3 class="contact-block-title">Office Hours</h3>
+                        <div class="hours-details-list">
+                            <div class="hours-info-item">
+                                <span class="hours-day">Monday – Friday</span>
+                                <span class="hours-time">9:00 AM – 6:00 PM</span>
+                            </div>
+                            <div class="hours-info-item">
+                                <span class="hours-day">Saturday</span>
+                                <span class="hours-time">10:00 AM – 4:00 PM</span>
+                            </div>
+                            <div class="hours-info-item">
+                                <span class="hours-day">Sunday</span>
+                                <span class="hours-time closed-label">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer Section -->
+    <footer class="footer-container">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    <span>SmartEvent</span>
+                </div>
+                <div class="footer-socials">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/deepak-g" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>Deepak G</span>
+                        </a>
+                        <a href="https://instagram.com/not_reachable_boy_" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <span>@not_reachable_boy_</span>
+                        </a>
+                        <a href="https://facebook.com/deepak-g" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            <span>Deepak G</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Smart Event Management System. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Modal for Alerts & Success Confirmations -->
+    <div class="modal-overlay" id="registration-modal" aria-hidden="true" role="dialog">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Registration Status</h3>
+                <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-icon-wrapper" id="modal-icon-container">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="modal-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <p id="modal-message">Registration completed successfully! Thank you for registering.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-block" id="modal-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JS Application -->
+    <script src="app.js"></script>
+</body>
+</html>
